@@ -9,7 +9,7 @@ export default createGlobalStyle`
         box-sizing: border-box;
         line-height: 1.5em;
       }
-    button {
+    button, a {
         cursor: pointer;
       }
     body {
