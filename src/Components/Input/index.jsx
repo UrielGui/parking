@@ -1,42 +1,22 @@
-import React, {useState} from 'react';
-import axios from "axios";
+import React, {useState, useContext} from 'react';
 import * as Styled from './Styled';
 import ClipLoader from "react-spinners/ClipLoader";
+import { PlateNumberPost } from '../../Services/PlateNumberPost.service';
+import { PlateInfo } from '../../Contexts';
 
 export default function Input() {
   const [plate, setPlate] = useState();
-  const [reservation, setReservation] = useState();
   const [errorMSg, setErrorMsg] = useState();
   const [errorOrSuccess, setErrorOrSuccess] = useState(null);
   const [loading, setLoading] = useState(false);
+
+  const { reservation, setReservation } = useContext(PlateInfo);
 
   function handleSubmit(e) {
     e.preventDefault()
     setErrorOrSuccess(null);
     setLoading(true)
-    return plateNumberPost(plate)
-  }
-
-  function plateNumberPost(plateNumber) {
-    axios.post('https://parking-lot-to-pfz.herokuapp.com/parking', {
-      plate: plateNumber
-    }).then((response) => {
-        setReservation(response.data.reservation)
-        setErrorOrSuccess('success')
-        setLoading(false)
-      }).catch((error) => {
-        setErrorOrSuccess('error')
-        setLoading(false)
-        if(error.response.data.errors.plate.find(e => e === "is invalid")) {
-          return setErrorMsg('Placa inválida!')
-        }
-        else if(error.response.data.errors.plate.find(e => e === "already parked")) {
-          return setErrorMsg('Veículo já estacionado!')
-        }
-        else {
-          return setErrorMsg('Serviço indisponível no momento!')
-        }
-      });
+    return PlateNumberPost(plate, setLoading, setReservation, setErrorOrSuccess, setErrorMsg)
   }
 
   function SuccessOrError({color}) {
