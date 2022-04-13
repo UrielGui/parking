@@ -29,6 +29,11 @@ export const MainContainer = styled.div`
   min-height: 100vh;
   margin: auto;
   box-shadow: 0px 0px 27px 6px #000000c9;
+
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+  }
+}
 `;
 
 export const Container = styled.div`

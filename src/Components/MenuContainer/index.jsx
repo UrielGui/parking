@@ -13,16 +13,14 @@ export default function MenuContainer(props) {
           background={show === "InputComponent" ? "" : "#00b7ff"}
           hover={show === "InputComponent" ? "" : "rgb(44, 77, 148)"}
           cursor={show === "InputComponent" ? "" : "pointer"}
-          onClick={() => setShow("InputComponent")}
-        >
+          onClick={() => setShow("InputComponent")}>
           Entrada
         </Styled.MenuContainerOption>
         <Styled.MenuContainerOption
           background={show === "OutputComponent" ? "" : "#ff00c8"}
           hover={show === "OutputComponent" ? "" : "rgb(44, 77, 148)"}
           cursor={show === "OutputComponent" ? "" : "pointer"}
-          onClick={() => setShow("OutputComponent")}
-        >
+          onClick={() => setShow("OutputComponent")}>
           Saída
         </Styled.MenuContainerOption>
       </Styled.MenuContainer>

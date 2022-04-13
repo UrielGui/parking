@@ -14,7 +14,7 @@ export default function PopUp(props) {
     paymentRecordErrorMsg,
     exitRecordErrorMsg,
     exitRecordStatus,
-    setExitRecordStatus,
+    setExitRecordStatus
   } = useContext(PlateInfo);
 
   useEffect(() => {

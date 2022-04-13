@@ -24,7 +24,7 @@ export default function Output() {
     exitRecord,
     setExitRecord,
     setExitRecordStatus,
-    setExitRecordErrorMsg,
+    setExitRecordErrorMsg
   } = useContext(PlateInfo);
 
   if (plate === null) {
@@ -84,18 +84,22 @@ export default function Output() {
                   required
                 />
               </div>
-              <Styled.Button onClick={() => Verification(setPayment)}>
+              <Styled.Button
+                background="#00b7ff"
+                onClick={() => Verification(setPayment)}>
                 {loading ? <ClipLoader color="fff" /> : "Confirmar Pagamento"}
               </Styled.Button>
-              <Styled.Button onClick={() => Verification(setExit)}>
+              <Styled.Button
+                background="#ff00c8"
+                onClick={() => Verification(setExit)}>
                 {loading ? <ClipLoader color="fff" /> : "Confirmar Saída"}
               </Styled.Button>
-              <button
+              <Styled.Button
+                background="#00b7ff"
                 onClick={() => OpenHistory()}
-                style={{ display: "block", textAlign: "center" }}
-              >
+                style={{ display: "block", borderRadius: "0 0 5px 5px" }}>
                 Consultar Histórico
-              </button>
+              </Styled.Button>
             </form>
           </Styled.Container>
         </>

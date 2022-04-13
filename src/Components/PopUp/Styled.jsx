@@ -30,6 +30,14 @@ export const Box = styled.div`
     margin: 20px 0;
     border-radius: 5px;
   }
+
+  @media only screen and (max-width: 1024px) {
+    width: 100%;
+    height: 100%;
+  }
+  @media only screen and (max-width: 485px) {
+    padding: 20px;
+  }
 `;
 
 export const Close = styled.button`
@@ -43,6 +51,11 @@ export const Close = styled.button`
 
   :hover {
     opacity: 0.5;
+  }
+
+  @media only screen and (max-width: 485px) {
+    left: 5px;
+    top: -5px;
   }
 `;
 
@@ -63,6 +76,13 @@ export const BackButton = styled.a`
   color: #fff;
   font-size: 14px;
   margin-top: 60px;
+
+  @media only screen and (max-width: 580px) {
+    margin-top: 30px;
+  }
+  @media only screen and (max-width: 375px) {
+    margin-top: 20px;
+  }
 `;
 
 export const ErrorMsg = styled.span`

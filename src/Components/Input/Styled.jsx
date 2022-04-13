@@ -13,9 +13,14 @@ export const Container = styled.div`
 export const Input = styled.input`
   font-size: 30px;
   border-radius: 5px 5px 0 0;
-  padding: 5px 10px;
+  padding: 15px 10px;
   background: rgb(65 181 226 / 71%);
   color: #fff;
+  width: 100%;
+
+  @media only screen and (max-width: 300px) {
+    font-size: 100%;
+  }
 
   ::-webkit-input-placeholder {
     color: #ffffff65;
@@ -30,6 +35,10 @@ export const Button = styled.button`
   color: #fff;
   background: #00b7ff;
   font-weight: medium;
+
+  @media only screen and (max-width: 300px) {
+    font-size: 100%;
+  }
 
   :hover {
     background: #ffffff1c;

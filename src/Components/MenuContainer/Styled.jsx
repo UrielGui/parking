@@ -13,6 +13,10 @@ export const Logo = styled.img`
 
 export const MenuContainer = styled.div`
   display: flex;
+
+  @media only screen and (max-width: 450px) {
+    flex-direction: column;
+  }
 `;
 
 export const MenuContainerOption = styled.div`
@@ -22,6 +26,12 @@ export const MenuContainerOption = styled.div`
   font-size: 20px;
   text-align: center;
   cursor: ${(props) => props.cursor};
+
+  @media only screen and (max-width: 450px) {
+    font-size: 100%;
+    width: 100%;
+    flex-direction: column;
+  }
 
   :hover {
     background: ${(props) => props.hover};
