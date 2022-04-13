@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
-  display: ${props => props.open ? 'flex' : 'none'};;
+  display: ${(props) => (props.open ? "flex" : "none")};
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -30,7 +30,7 @@ export const Box = styled.div`
     margin: 20px 0;
     border-radius: 5px;
   }
-`
+`;
 
 export const Close = styled.button`
   place-self: self-end;
@@ -44,7 +44,7 @@ export const Close = styled.button`
   :hover {
     opacity: 0.5;
   }
-`
+`;
 
 export const OK = styled.button`
   padding: 10px 0px;
@@ -57,22 +57,22 @@ export const OK = styled.button`
     background: #fff;
     color: #333;
   }
-`
+`;
 export const BackButton = styled.a`
   padding: 10px 0px;
   color: #fff;
   font-size: 14px;
   margin-top: 60px;
-`
+`;
 
 export const ErrorMsg = styled.span`
   margin-top: 10px;
   color: #ff5f74;
-`
+`;
 
 export const Icon = styled.span`
   font-size: 60px;
-`
+`;
 
 export const ContainerConfirmation = styled.div`
   display: block;
@@ -80,8 +80,6 @@ export const ContainerConfirmation = styled.div`
   h2 {
     margin-bottom: 120px;
   }
-`
+`;
 
-export const LoadingIcon = styled.div`
-  
-`
+export const LoadingIcon = styled.div``;

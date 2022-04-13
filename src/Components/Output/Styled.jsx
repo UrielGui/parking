@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -19,34 +19,33 @@ export const Input = styled.input`
 
   ::-webkit-input-placeholder {
     color: #ffffff65;
-}
+  }
 `;
 
 export const Button = styled.button`
   width: 100%;
   border-radius: 0 0 5px 5px;
-  font-size: 30px;
+  font-size: 25px;
   padding: 5px 10px;
   color: #fff;
   background: #00b7ff;
   font-weight: medium;
 
   :hover {
-    background: #ffffff1c
+    background: #ffffff1c;
   }
 `;
 
 export const SuccessOrError = styled.div`
   margin-top: 20px;
-  text-align:  center;
+  text-align: center;
 
   h4 {
     margin-bottom: 10px;
-    color: ${props => props.color};
+    color: ${(props) => props.color};
   }
 
   span {
     color: #00b7ff;
   }
 `;
-

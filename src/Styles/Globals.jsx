@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
     * {
@@ -9,21 +9,26 @@ export default createGlobalStyle`
         box-sizing: border-box;
         line-height: 1.5em;
       }
+    ul {
+      list-style-type: none;
+    }
     button, a {
         cursor: pointer;
       }
     body {
       background: rgb(15, 30, 65);
       color: #fff;
+      min-height: 100vh;
     }
 `;
 
 export const MainContainer = styled.div`
-  max-width: 60%;
-  margin: 50px auto;
+  width: 60%;
   background: #00000055;
   border-radius: 10px;
-  height: 500px;
+  min-height: 100vh;
+  margin: auto;
+  box-shadow: 0px 0px 27px 6px #000000c9;
 `;
 
 export const Container = styled.div`
