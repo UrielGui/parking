@@ -17,7 +17,7 @@ export default function MenuContainer(props) {
           Entrada
         </Styled.MenuContainerOption>
         <Styled.MenuContainerOption
-          background={show === "OutputComponent" ? "" : "#ff00c8"}
+          background={show === "OutputComponent" ? "" : "#673ab7"}
           hover={show === "OutputComponent" ? "" : "rgb(44, 77, 148)"}
           cursor={show === "OutputComponent" ? "" : "pointer"}
           onClick={() => setShow("OutputComponent")}>

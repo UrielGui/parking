@@ -33,7 +33,6 @@ export const Button = styled.button`
   padding: 5px 10px;
   color: #fff;
   background: ${(props) => props.background};
-  font-weight: medium;
 
   @media only screen and (max-width: 300px) {
     font-size: 100%;

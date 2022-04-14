@@ -90,12 +90,12 @@ export default function Output() {
                 {loading ? <ClipLoader color="fff" /> : "Confirmar Pagamento"}
               </Styled.Button>
               <Styled.Button
-                background="#ff00c8"
+                background="#673ab7"
                 onClick={() => Verification(setExit)}>
                 {loading ? <ClipLoader color="fff" /> : "Confirmar Saída"}
               </Styled.Button>
               <Styled.Button
-                background="#00b7ff"
+                background="#1b346f"
                 onClick={() => OpenHistory()}
                 style={{ display: "block", borderRadius: "0 0 5px 5px" }}>
                 Consultar Histórico

@@ -9,7 +9,7 @@ export function PlateNumberPost(
 ) {
   axios
     .post("https://parking-lot-to-pfz.herokuapp.com/parking", {
-      plate: plateNumber,
+      plate: plateNumber
     })
     .then((response) => {
       setReservation(response.data.reservation);

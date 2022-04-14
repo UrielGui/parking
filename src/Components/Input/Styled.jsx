@@ -34,7 +34,6 @@ export const Button = styled.button`
   padding: 5px 10px;
   color: #fff;
   background: #00b7ff;
-  font-weight: medium;
 
   @media only screen and (max-width: 300px) {
     font-size: 100%;
