@@ -43,13 +43,9 @@ export default function History(props) {
           Situação:{" "}
           <span>{historyDetails.left ? "Não Estacionado" : "Estacionado"}</span>
         </li>
-        {historyDetails.left ? (
-          <li>
-            Tempo Estacionado: <span>{historyDetails.time}</span>
-          </li>
-        ) : (
-          ""
-        )}
+        <li>
+          Tempo Estacionado: <span>{historyDetails.time}</span>
+        </li>
         <li>
           Pagamento:{" "}
           <span>{historyDetails.paid ? "Confirmado" : "Não Confirmado"}</span>
